@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #400202, #8a1d1d);
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90%;
+  color: white;
+  font-size: 2rem;
+}
+
+.calculadora {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  gap: 10%;
+}
+
+input {
+  width: 85%;
+  padding: 10px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  font-family: "Hind", sans-serif;
+  font-weight: bold;
+}
+
+input:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+button {
+  width: 13%;
+  padding: 15px;
+  font-size: 1.8rem;
+  border-radius: 20px;
+  background-color: #8a1d1d;
+  color: white;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 550;
+  border: solid 3px transparent;
+}
+
+button:hover {
+  background-color: transparent;
+  border: solid 3px #8a1d1d;
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+#show {
+  color: black;
+  position: fixed;
+  z-index: 1000;
+  top: 39%;
+  left: 47%;
+  font-weight: bold;
+  font-size: 1.9em;
+}
+
+@media (max-width: 800px) {
+  .calculadora {
+    flex-direction: column;
+    width: 95%;
+    gap: 20px;
+  }
+  input,
+  button {
+    width: 70%;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  section {
+    height: 100%;
+  }
+}
+
+.instrucciones {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: auto;
+  background: linear-gradient(135deg, #400202, #8a1d1d);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border: solid 3px #8a1d1d;
+  border-radius: 20px;
+  z-index: 1001;
+  display: none;
+}
+.instrucciones p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+}
+.instrucciones svg {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.instrucciones svg:hover {
+
+ transform: scale(1.2);
+}
