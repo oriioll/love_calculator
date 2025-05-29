@@ -14,7 +14,7 @@ document.getElementById('calculate').addEventListener('click', function() {
         alert('Please enter both names.');
         return;
     } else if (
-        (name1lower === 'oriol' && name2lower === 'gemma') || (name1lower === 'gemma' && name2lower === 'oriol')
+        (name1lower === 'oriol' && name2lower === 'gemma') || (name1lower === 'gemma' && name2lower === 'oriol') || (name1lower === 'abril' && name2lower === 'gavi') || (name1lower === 'gavi' && name2lower === 'abril') || (name1lower === 'berta' && name2lower === 'laia') || (name1lower === 'laia' && name2lower === 'berta') || (name1lower === 'laia' && name2lower === 'sergi') || (name1lower === 'sergi' && name2lower === 'laia')
     ) {
         score = 100;
         document.getElementById('show').innerText = `${score}%`;
