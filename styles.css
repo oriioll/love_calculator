@@ -158,3 +158,18 @@ img {
     transform: translateY(0);
   }
 }
+
+h1 {
+     background: linear-gradient(90deg, #00FFFF, #9400D3, #FF00FF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientShift 5s ease infinite;
+  background-size: 200% 200%; 
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
