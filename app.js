@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next"
 const name1 = document.getElementById("name1");
 const name2 = document.getElementById("name2");
 let score = 0;
