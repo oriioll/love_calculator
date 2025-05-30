@@ -10,6 +10,7 @@ body {
   box-sizing: border-box;
   background: linear-gradient(135deg, #400202, #8a1d1d);
   font-family: "Montserrat", sans-serif;
+   animation: fadeInPage .9s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 section {
@@ -40,6 +41,7 @@ input {
   outline: none;
   font-family: "Hind", sans-serif;
   font-weight: bold;
+  animation: fadeInPage .9s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 input:hover {
@@ -58,6 +60,7 @@ button {
   font-family: "Montserrat", sans-serif;
   font-weight: 550;
   border: solid 3px transparent;
+  animation: fadeInPage .9s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button:hover {
@@ -70,6 +73,7 @@ img {
   height: auto;
   display: block;
   margin: 0 auto;
+  animation: fadeInPage .9s cubic-bezier(0.4, 0, 0.2, 1);
 }
 #show {
   color: black;
@@ -141,4 +145,16 @@ img {
 
  transform: scale(1.2);
   cursor: pointer;
+}
+
+
+@keyframes fadeInPage {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
