@@ -159,7 +159,7 @@ img {
   }
 }
 /*TITULO ESTILO ANGULAR*/
-h1 {
+.h1 {
      background: linear-gradient(90deg, #00FFFF, #9400D3, #FF00FF);
   -webkit-background-clip: text;
   background-clip: text;
@@ -172,4 +172,14 @@ h1 {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+
+.instrucciones h1 {
+  color: #8a1d1d;
+  text-shadow:
+    -1px 0 0 white,
+     1px 0 0 white,
+     0 -1px 0 white,
+     0 1px 0 white;
 }
