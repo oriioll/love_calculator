@@ -48,3 +48,8 @@ document.getElementById("modal").addEventListener("click", function () {
     openModal = false;
   }
 });
+
+document.getElementById("close").addEventListener("click", function () {
+  document.querySelector(".instrucciones").style.display = "none";
+  openModal = false;
+});
